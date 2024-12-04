@@ -72,9 +72,10 @@ hr {
     color: white;
     cursor: pointer;
   }
-  
-  /* Responsive Styles of navbar*/
-  @media (max-width: 768px) {
+
+
+  /* Responsive Styles of navbar */
+ @media (max-width: 768px) {
     .nav-links {
       display: none;
       flex-direction: column;
@@ -99,6 +100,13 @@ hr {
     }
   }
   
+  
+
+
+
+
+
+
 
   /* Home Section */
 .home-section {
@@ -491,7 +499,7 @@ hr {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
