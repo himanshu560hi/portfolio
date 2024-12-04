@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu-Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Himanshu Portfolio</div>
+        <button class="hamburger" id="hamburger">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+      <section id="home" class="home-section">
+          <div class="leftsection">
+            Hi, My name is <span class="purple">Himanshu</span>
+            <div>and I am a Passionate
+            </div>
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btn"><a href="resume.pdf" class="git1">Download Resume</a></button>
+                <button class="btn"><a href="https://github.com/himanshu560hi" class="git1">Visit GitHub</a></button>
+            </div>
+        </div>
+        <div class="graphic">
+          <img src="bg.png" alt="Web Designer Illustration" />
+        </div>
+      </section>
+      <hr>
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="about-image" id="about-image">
+            <img src="mypic.jpg" alt="Himanshu Gupta">
+          </div>
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              Hello everyone, I am <strong>Himanshu Gupta</strong>, a web developer who loves to create and beautify websites. 
+              I love making new websites which are easy to use and can be accessed by anyone. I love to have my clients happy 
+              with the site’s performance, which they are able to see on their personal devices. 
+              I hope I get the opportunity to work in your esteemed organization. That’s all from my side.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="skills" id="skills">
+        <div class="skills-container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+              <p>HTML, CSS, JavaScript, React.js, Bootstrap, Tailwind CSS</p>
+            </div>
+            <div class="skill">
+              <i class="fas fa-database"></i>
+              <h3>Backend Development</h3>
+              <p>Node.js, Express.js, Python, Django, REST APIs</p>
+            </div>
+            <div class="skill">
+              <i class="fas fa-server"></i>
+              <h3>Database Management</h3>
+              <p>MySQL, MongoDB, PostgreSQL</p>
+            </div>
+            <div class="skill">
+              <i class="fas fa-cloud"></i>
+              <h3>DevOps & Hosting</h3>
+              <p>Git, GitHub, Docker, Heroku, Netlify, AWS</p>
+            </div>
+            <div class="skill">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Version Control</h3>
+              <p>Git, GitHub, Bitbucket</p>
+            </div>
+            <div class="skill">
+              <i class="fas fa-user-check"></i>
+              <h3>Soft Skills</h3>
+              <p>Teamwork, Problem-Solving, Communication</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="projects" id="portfolio">
+        <div class="projects-container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="project1.PNG" alt="Project 1">
+              <div class="project-info">
+                <h3>Restaurant website
+                </h3>
+                </h3>
+                <p>This Website is used for ordering food from your doorstep.
+                </p>
+                <a href="https://himanshu560hi.github.io/CodSoft/Landingpage/index.html" target="_blank" class="btn">View Project</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="project2.PNG" alt="Project 2">
+              <div class="project-info">
+                <h3>Functional Calculator                </h3>
+                <p>A Basic Functional Calculator Using JavaScript</p>
+                <a href="https://himanshu560hi.github.io/CodSoft/Calculator/" target="_blank" class="btn">View Project</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="project3.PNG" alt="Project 3">
+              <div class="project-info">
+                <h3>Project Title 3</h3>
+                <p>A brief description of the project. Highlight its purpose, technologies used, and key features.</p>
+                <a href="#project" target="_blank" class="btn">View Project</a>
+              </div>
+            </div>
+            <!-- Add more project cards as needed -->
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h2 class="section-title">Contact Me</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+      
+          <!-- Your contact details section -->
+          <div class="contact-details">
+            <h3>Get in Touch</h3>
+            <p>I'm always open to discussing new projects or opportunities. You can reach me at the following:</p>
+            <ul>
+              <li><strong>Name:</strong> Himanshu Gupta</li>
+              <li><strong>Email:</strong>  himanshu561hi@gmail.com</li>
+              <li><strong>Phone:</strong> +91-8090860670</li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/himanshu561hi/" target="_blank">LinkedIn Profile</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/himanshu560hi/" target="_blank">GitHub Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+            
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
