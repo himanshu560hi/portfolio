@@ -75,3 +75,94 @@ var typed = new Typed('#element', {
     });
   });
   
+
+
+
+
+
+  // button for go back top 
+  // Get the button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show the button when scrolling down
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Scroll to the top when the button is clicked
+backToTopButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to open the payment modal with service details
+let selectedService = {};
+
+function openPaymentModal(serviceName, price) {
+    selectedService = { serviceName, price };
+    document.getElementById('service-title').innerText = serviceName;
+    document.getElementById('service-description').innerText = `You are about to pay for the ${serviceName} service.`;
+    document.getElementById('service-price').innerText = `Price: ${price} Rs`;
+    document.getElementById('payment-modal').style.display = 'flex';
+}
+
+// Close the payment modal
+function closePaymentModal() {
+    document.getElementById('payment-modal').style.display = 'none';
+}
+
+// Razorpay Payment Gateway Integration
+function initiatePayment() {
+    const options = {
+        key: "rzp_live_BcEBmCs2qOb2HB", // Replace with your Razorpay Key ID
+        amount: selectedService.price * 100, // Amount in paisa
+        currency: "INR", // Change to INR if you're using Indian Rupees
+        name: "Freelancing Services",
+        description: `Payment for ${selectedService.serviceName}`,
+        image: "your-logo-url", // Optional: add logo URL
+        handler: function (response) {
+            alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+            closePaymentModal();
+        },
+        // prefill: {
+        //     name: "Customer Name",  You can prefill the customer's name, email, etc.
+        //     email: "customer@example.com",
+        //     contact: "987654xxxx",
+        // },
+        theme: {
+            color: "#007bff",
+        },
+    };
+
+    const rzp = new Razorpay(options);
+
+    rzp.on("payment.failed", function (response) {
+        alert(`Payment failed! Reason: ${response.error.description}`);
+    });
+
+    rzp.open();
+}

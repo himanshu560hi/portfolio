@@ -9,6 +9,7 @@
     <link rel="icon" href="mypiccircle.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -256,6 +257,61 @@
         </div>
       </section>
       
+
+
+
+      <section id="freelancing" class="freelancing-section">
+        <div class="freelancing-header">
+            <h2>Freelancing Services</h2>
+            <p>Explore the services I offer to bring your ideas to life.</p>
+        </div>
+        <div class="freelancing-services">
+            <div class="service-card">
+                <img src="logo-design.jpg" alt="Logo Design">
+                <h3>Portfolio </h3>
+                <p>A Portfolio similar or different from my Portfolio</p>
+                <p class="price">2000 Rs</p>
+                <button class="contact-btn" onclick="openPaymentModal('Portfolio', 5)">Get Started</button>
+            </div>
+    
+            <div class="service-card">
+                <img src="web-development.jpg" alt="Web Development">
+                <h3>Website </h3>
+                <p>Responsive websites to enhance your online presence.</p>
+                <p class="price">5000 Rs</p>
+                <button class="contact-btn" onclick="openPaymentModal('Website', 5000)">Get Started</button>
+            </div>
+    
+            <!-- <div class="service-card">
+                <img src="content-writing.jpg" alt="Content Writing">
+                <h3>Content Writing</h3>
+                <p>SEO-optimized and engaging content for your business.</p>
+                <p class="price">$50</p>
+                <button class="contact-btn" onclick="openPaymentModal('Content Writing', 50)">Get Started</button>
+            </div>
+        </div> -->
+    
+        <!-- Payment Modal -->
+        <div id="payment-modal" class="payment-modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closePaymentModal()">&times;</span>
+                <h3 id="service-title">Service Name</h3>
+                <p id="service-description">Service Description</p>
+                <p id="service-price">Price: $</p>
+                <button class="pay-btn" onclick="initiatePayment()">Pay Now</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
       <hr>
       <section class="contact" id="contact">
         <div class="contact-container">
@@ -290,39 +346,24 @@
           </div>
         </div>
       </section>
-      <!-- <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-content">
-            <div class="social-links">
-              <h4>Follow Me</h4>
-              <a href="https://www.linkedin.com/in/himanshu561hi/" target="_blank" class="social-link">LinkedIn</a>
-              <a href="https://github.com/himanshu560hi" target="_blank" class="social-link">GitHub</a>
-              <a href="https://x.com/i/flow/login?redirect_after_login=%2FHimanshu560hi" target="_blank" class="social-link">X</a>
-              <a href="https://www.instagram.com/_oye_himanshu" target="_blank" class="social-link">Instagram</a>
-            </div>
-      
-            <div class="contact-info">
-              <h4>Contact Information</h4>
-              <p>Email: <a href="mailto:himanshu561hi@gmail.com" class="footer-link">himanshu560hi@gmail.com</a></p>
-              <p>Phone: <a href="tel:+918090860670" class="footer-link">+91 8090860670</a></p>
-              <p>Location: Ghaziabad (U.P.), India, 201001</p>
-            </div>
-      
-            <div class="useful-links">
-              <h4>Useful Links</h4>
-              <a href="#home" class="footer-link">Home</a>
-              <a href="#about" class="footer-link">About</a>
-              <a href="#skills" class="footer-link">Skills</a>
-              <a href="#project" class="footer-link">Projects</a>
-              <a href="#contact" class="footer-link">Contact</a>
-            </div>
-      
-            <div class="copyright">
-              <p>&copy; 2024 Himanshu Gupta. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </footer>-->
+    
+
+
+
+      <button id="backToTop" title="Go to top">↑</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
